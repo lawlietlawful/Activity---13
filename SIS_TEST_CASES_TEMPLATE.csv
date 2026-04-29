@@ -1,0 +1,9 @@
+Test Case ID,Test Scenario,Input Data,Expected Result,Actual Result,Status
+TC-01,"Add student (normal)","John, Doe, 20, BSIT","Record is saved and appears in table with success message","",""
+TC-02,"Add student with empty first name (edge)",""", Doe, 20, BSIT","Validation error shown; record not saved","",""
+TC-03,"Update student (normal)","Change course BSIT -> BSCS","Updated value appears after save","",""
+TC-04,"Delete student with confirmation","Delete then confirm","Record is removed and success message is shown","",""
+TC-05,"Delete cancelled (edge)","Delete then cancel","Record remains in table","",""
+TC-06,"Live search (2 letters)","Jo","Matching records appear automatically","",""
+TC-07,"Export CSV with filter","Course=BSIT then Export CSV","CSV downloads with filtered records","",""
+TC-08,"Export PDF no result (edge)","Search unmatched text then Export PDF","PDF downloads with no-record message","",""
